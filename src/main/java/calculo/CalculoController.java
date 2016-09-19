@@ -17,10 +17,10 @@ public class CalculoController extends HttpServlet {
     //Preparação dos parâmetros.
     String nome = req.getParameter("nome");
     String frequenciaStr = req.getParameter("frequencia");
-    float frequencia = Float.parseFloat(frequenciaStr);
+    float frequencia = frequenciaStr == null || frequenciaStr.isEmpty() ? 0 : Float.parseFloat(frequenciaStr);
 
     String notaStr = req.getParameter("nota");
-    float nota = Float.parseFloat(notaStr);
+    float nota = notaStr == null || notaStr.isEmpty() ? 0 : Float.parseFloat(notaStr);
 
     //Chamada ao Model.
     String resultado = CalculoModel.ResultadoAprovacao(nome,frequencia,nota);

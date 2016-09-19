@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <title>Cálculo de IMC</title>
@@ -10,6 +11,6 @@
 		Nota do Aluno: <input type="text" name="nota" required="" value="${param.nota}"><br>
 		<button>Calcular</button>
 	</form>
-    <b>${resultadoAprovacao}</b>
+    <b>${ResultadoAprovacao}</b>
 </body>
 </html>

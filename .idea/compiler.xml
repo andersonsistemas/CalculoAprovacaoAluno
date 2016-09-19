@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="CalculoAprovacaoAluno2" />
         <module name="ufg-inf-pw-2016-2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="CalculoAprovacaoAluno2" target="1.8" />
       <module name="ufg-inf-pw-2016-2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
