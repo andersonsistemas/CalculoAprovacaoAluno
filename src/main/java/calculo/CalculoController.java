@@ -15,7 +15,8 @@ public class CalculoController extends HttpServlet {
   protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     
     //Preparação dos parâmetros.
-    String nome = req.getParameter("nome");
+    String nomeStr = req.getParameter("nome");
+  String nome = nomeStr == null || nomeStr.isEmpty() ? "0" : nomeStr;
     String frequenciaStr = req.getParameter("frequencia");
     float frequencia = frequenciaStr == null || frequenciaStr.isEmpty() ? 0 : Float.parseFloat(frequenciaStr);
 
