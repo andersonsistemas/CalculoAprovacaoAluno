@@ -1,6 +1,7 @@
 
 <html>
 <head>
+	<%@ include file="header.html" %>
 <title>Cálculo Aprovação Aluno</title>
 </head>
 <body>
